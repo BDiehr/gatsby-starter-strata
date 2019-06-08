@@ -12,11 +12,13 @@
     "node-sass": "^4.12.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.1",
-    "react-images": "^1.0.0"
+    "react-helmet": "^5.2.0",
+    "react-images": "^0.5.19"
   },
   "scripts": {
     "build": "gatsby build",
+    "postbuild": "mv ./public ./dist",
+    "clean": "rm -rf ./public && rm -rf ./dist",
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
