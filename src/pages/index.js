@@ -18,6 +18,7 @@ import full04 from '../assets/images/fulls/04.jpg'
 import full05 from '../assets/images/fulls/05.jpg'
 import full06 from '../assets/images/fulls/06.jpg'
 import { ContactForm } from '../components/ContactForm'
+import { graphql } from 'gatsby'
 
 const DEFAULT_IMAGES = [
   {
@@ -68,7 +69,7 @@ class HomeIndex extends React.Component {
   render() {
     const siteTitle = 'Gatsby Starter - Strata'
     const siteDescription = 'Site description'
-
+    const { data: { allInstaNode: { nodes } } } = this.props;
     return (
       <Layout>
         <Helmet>
@@ -99,12 +100,12 @@ class HomeIndex extends React.Component {
             <h2>Recent Work</h2>
 
             <Gallery
-              images={DEFAULT_IMAGES.map(
-                ({ id, src, thumbnail, caption, description }) => ({
-                  src,
-                  thumbnail,
-                  caption,
-                  description,
+              images={nodes.map(
+                ({ id, original, preview, caption }) => ({
+                  src: original,
+                  thumbnail: preview,
+                  caption: '',
+                  description: '',
                 })
               )}
             />
@@ -123,5 +124,21 @@ class HomeIndex extends React.Component {
     )
   }
 }
+
+export const pageQuery = graphql`
+    query RecentPhotosQuery {
+        allInstaNode {
+            nodes {
+                likes
+                comments
+                caption
+                preview
+                original
+                timestamp
+            }
+        }
+    }
+`
+
 
 export default HomeIndex
