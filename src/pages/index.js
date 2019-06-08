@@ -69,7 +69,11 @@ class HomeIndex extends React.Component {
   render() {
     const siteTitle = 'Gatsby Starter - Strata'
     const siteDescription = 'Site description'
-    const { data: { allInstaNode: { nodes } } } = this.props;
+    const {
+      data: {
+        allInstaNode: { nodes },
+      },
+    } = this.props
     return (
       <Layout>
         <Helmet>
@@ -100,19 +104,17 @@ class HomeIndex extends React.Component {
             <h2>Recent Work</h2>
 
             <Gallery
-              images={nodes.map(
-                ({ id, original, preview, caption }) => ({
-                  src: original,
-                  thumbnail: preview,
-                  caption: '',
-                  description: '',
-                })
-              )}
+              images={nodes.map(({ id, original, preview, caption }) => ({
+                src: original,
+                thumbnail: preview,
+                caption: '',
+                description: '',
+              }))}
             />
 
             <ul className="actions">
               <li>
-                <a href="#" className="button">
+                <a href="/portfolio" className="button">
                   Full Portfolio
                 </a>
               </li>
@@ -126,19 +128,18 @@ class HomeIndex extends React.Component {
 }
 
 export const pageQuery = graphql`
-    query RecentPhotosQuery {
-        allInstaNode {
-            nodes {
-                likes
-                comments
-                caption
-                preview
-                original
-                timestamp
-            }
-        }
+  query RecentPhotosQuery {
+    allInstaNode {
+      nodes {
+        likes
+        comments
+        caption
+        preview
+        original
+        timestamp
+      }
     }
+  }
 `
-
 
 export default HomeIndex

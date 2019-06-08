@@ -49,7 +49,7 @@ class Gallery extends Component {
 
     const gallery = images.map((obj, i) => {
       return (
-        <article className="6u 12u$(xsmall) work-item" key={i}>
+        <article className="12u work-item" key={i}>
           <a
             className="image fit thumb"
             href={obj.src}
