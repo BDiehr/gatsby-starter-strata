@@ -12,8 +12,10 @@ class Header extends React.Component {
             <img src={avatarUrl} alt="" />
           </a>
           <h1>
-            <strong>Wanders Wild</strong>
-            <br />A wanderer, her dogs, a cat, plus boyfriend of forever.
+          <strong>Wanders Wild</strong>
+          </h1>
+          <h1>
+            A wanderer, her dogs, a cat, plus boyfriend of forever.
             Eternally seeking mountain peaks and the perfect espresso ↟
           </h1>
         </div>
