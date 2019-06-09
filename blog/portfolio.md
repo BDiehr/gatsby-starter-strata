@@ -11,6 +11,8 @@ Love Your Melon
 
 Wondercide
 
+![](/assets/_hrr6859-2.jpg)
+
 Bulletproof
 
 Earth Rated
