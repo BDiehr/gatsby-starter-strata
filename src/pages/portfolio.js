@@ -22,7 +22,8 @@ class HomeIndex extends React.Component {
     }))
     return (
       <Layout className="portfolio" hideHeader>
-        <h1>Portfolio</h1>
+        <div style={{ display: 'flex', alignItems: 'center',  justifyContent: 'center', alignContent: 'center', flexDirection: 'column' }}>
+        <h1><strong>Portfolio</strong></h1>
         <em
           style={{
             display: 'block',
@@ -30,8 +31,10 @@ class HomeIndex extends React.Component {
             marginTop: '-0.5em',
           }}
         >
-          <h3>Heather Reed</h3>
+          <h4>Heather Reed</h4>
         </em>
+        </div>
+        <br/>
         <Helmet>
           <title>Portfolio</title>
           <meta name="description" content={siteDescription} />
