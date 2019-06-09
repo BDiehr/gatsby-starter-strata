@@ -8,10 +8,19 @@ export default function Template({
   const { frontmatter, html } = markdownRemark
   return (
     <div className="blog-post-container">
-      <div className="blog-post">
-        <h1>{frontmatter.title}</h1>
-        <h2>{frontmatter.date}</h2>
+      <div
+        style={{ padding: '2em', maxWidth: '800px', margin: '0 auto' }}
+        className="blog-post"
+      >
+        <h1 style={{ fontSize: '4em', paddingBottom: 0, marginBottom: 0 }}>
+          <strong>{frontmatter.title}</strong>
+        </h1>
+        <sub>
+          Posted on {frontmatter.date} by <em>Heather</em>
+        </sub>
+        <br />
         <div
+          style={{ marginTop: '1em' }}
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: html }}
         />
