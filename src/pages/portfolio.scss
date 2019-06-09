@@ -1,7 +1,8 @@
 $image-size: 700;
+$large-grid-gap: 0.5em;
 
 .portfolio {
-  margin: 2em;
+  margin: 1em;
 }
 
 .hover-text {
@@ -23,8 +24,8 @@ $image-size: 700;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
-  grid-row-gap: 2em;
-  grid-column-gap: 2em;
+  grid-row-gap: $large-grid-gap;
+  grid-column-gap: $large-grid-gap;
   justify-items: center;
   align-items: center;
 
