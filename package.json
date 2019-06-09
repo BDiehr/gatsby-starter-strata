@@ -22,8 +22,7 @@
   },
   "scripts": {
     "build": "gatsby build",
-    "postbuild": "mv ./public ./dist",
-    "clean": "rm -rf ./public && rm -rf ./dist",
+    "clean": "rm -rf ./public",
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
