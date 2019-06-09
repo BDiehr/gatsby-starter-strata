@@ -28,3 +28,10 @@ collections:
       - {label: "Detail Image 3", name: "detail_img_3", widget: "image"}
       - {label: "Detail Image 4", name: "detail_img_4", widget: "image"}
       - {label: "Detail Image 5", name: "detail_img_5", widget: "image"}
+  - name: brands
+    label: Brands
+    folder: data/brands
+    create: true
+    fields:
+      - {label: "Client", name: "client", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
