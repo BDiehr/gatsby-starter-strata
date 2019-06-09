@@ -21,14 +21,19 @@ class HomeIndex extends React.Component {
       caption,
     }))
     return (
-      <Layout hideHeader>
-        <h1
-          style={{ marginLeft: '0.5em', marginTop: '0.5em', fontSize: '4em' }}
+      <Layout className="portfolio" hideHeader>
+        <h1>Portfolio</h1>
+        <em
+          style={{
+            display: 'block',
+            position: 'relative',
+            marginTop: '-0.5em',
+          }}
         >
-          Portfolio
-        </h1>
+          <h3>Heather Reed</h3>
+        </em>
         <Helmet>
-          <title>{siteTitle}</title>
+          <title>Portfolio</title>
           <meta name="description" content={siteDescription} />
         </Helmet>
 

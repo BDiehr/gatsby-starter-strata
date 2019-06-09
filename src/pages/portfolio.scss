@@ -1,12 +1,13 @@
-$image-size: 400px;
+$image-size: 700;
+
+.portfolio {
+  margin: 2em;
+}
 
 .image-grid {
-  margin: 2em;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-
   grid-template-rows: auto;
-
   grid-row-gap: 2em;
   grid-column-gap: 2em;
   justify-items: center;
@@ -24,7 +25,21 @@ $image-size: 400px;
   img {
     object-fit: cover;
     height: 100%;
-
     width: 100%;
+  }
+}
+@media (max-width: 1000px) {
+  .image-grid {
+    grid-template-columns: 1fr 1fr !important;
+    grid-row-gap: 1em;
+    grid-column-gap: 1em;
+  }
+}
+
+@media (max-width: 600px) {
+  .image-grid {
+    grid-template-columns: 1fr !important;
+    grid-row-gap: 1em;
+    grid-column-gap: 1em;
   }
 }
