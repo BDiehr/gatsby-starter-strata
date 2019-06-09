@@ -5,11 +5,11 @@ import Header from './Header'
 
 class Template extends React.Component {
   render() {
-    const { children } = this.props
+    const { children, hideHeader = false } = this.props
 
     return (
       <div>
-        <Header />
+        {!hideHeader && <Header />}
         {children}
       </div>
     )
