@@ -40,8 +40,8 @@
 		)
 	));
 
-	$size-header-width: 35%;
-	$size-header-pad: 4em;
+	$size-header-width: 15%;
+	$size-header-pad: 2em;
 
 /* Basic */
 
@@ -1196,7 +1196,7 @@
 
 	@include breakpoint(large) {
 
-		$size-header-width: 30%;
+		$size-header-width: 20%;
 		$size-header-pad: 3em;
 
 		/* Header */

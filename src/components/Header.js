@@ -14,10 +14,10 @@ class Header extends React.Component {
           <h1>
             <strong>Wanders Wild</strong>
           </h1>
-          <h1>
+          <h5 style={{ color: 'lightgray' }}>
             A wanderer, her dogs, a cat, plus boyfriend of forever. Eternally
             seeking mountain peaks and the perfect espresso ↟
-          </h1>
+          </h5>
         </div>
         <Footer />
       </header>
