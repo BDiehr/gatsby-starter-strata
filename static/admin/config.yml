@@ -2,7 +2,7 @@ backend:
   name: github
   repo: bdiehr/gatsby-starter-strata
 
-media_folder: static/assets
+media_folder: dist
 public_folder: dist
 
 collections:
