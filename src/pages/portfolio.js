@@ -24,15 +24,6 @@ class HomeIndex extends React.Component {
       <Layout className="portfolio" hideHeader>
         <div style={{ display: 'flex', alignItems: 'center',  justifyContent: 'center', alignContent: 'center', flexDirection: 'column' }}>
         <h1><strong>Portfolio</strong></h1>
-        <em
-          style={{
-            display: 'block',
-            position: 'relative',
-            marginTop: '-0.5em',
-          }}
-        >
-          <h4>Heather Reed</h4>
-        </em>
         </div>
         <br/>
         <Helmet>
@@ -43,7 +34,10 @@ class HomeIndex extends React.Component {
         <section className="image-grid">
           {images.map(image => (
             <div className="image-container">
-              <img key={image.id} src={image.preview} title={image.caption} />
+              <img key={image.id} src={image.preview} />
+              <div className="hover-text">
+                View More
+              </div>
             </div>
           ))}
         </section>

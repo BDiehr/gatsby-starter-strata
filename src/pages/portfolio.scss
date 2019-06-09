@@ -3,6 +3,10 @@ $image-size: 700;
 .portfolio {
   margin: 2em;
 }
+
+.hover-text {
+    visibility: hidden;
+}
 @media (max-width: 600px) {
   .portfolio {
     margin-left: 0;
@@ -23,19 +27,41 @@ $image-size: 700;
   align-items: center;
 
   .image-container {
+    position: relative;
     display: flex;
     align-items: center;
     justify-items: center;
     background: black;
     height: 100%;
     max-width: $image-size;
+
     max-height: $image-size;
+
+    &:hover {
+      .hover-text {
+        visibility: visible!important;
+      }
+    }
+
+
   }
   img {
-    object-fit: cover;
+    &:hover {
+      cursor: pointer;
+      filter: blur(3px) grayscale(40%);
+    }
     height: 100%;
     width: 100%;
+    object-fit: cover;
   }
+}
+.hover-text {
+  width: 100%;
+  font-size: 3em;
+  font-weight: bolder;
+  text-align: center;
+  position: absolute;
+  color: white;
 }
 @media (max-width: 1000px) {
   .image-grid {
