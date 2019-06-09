@@ -1,4 +1,5 @@
-$image-size: 700;
+$image-width: 800;
+$image-height: 400px;
 $large-grid-gap: 0.5em;
 
 .portfolio {
@@ -37,9 +38,8 @@ $large-grid-gap: 0.5em;
     justify-items: center;
     background: black;
     height: 100%;
-    max-width: $image-size;
-
-    max-height: $image-size;
+    max-width: $image-width;
+    max-height: $image-height!important;
 
     &:hover {
       .hover-text {

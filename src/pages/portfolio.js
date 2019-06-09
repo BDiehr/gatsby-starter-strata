@@ -22,10 +22,9 @@ class HomeIndex extends React.Component {
     }))
     return (
       <Layout className="portfolio" hideHeader>
-          <h1>
-            <strong>Portfolio</strong>
-          </h1>
-        <br />
+        <h1>
+          <strong>Portfolio</strong>
+        </h1>
         <Helmet>
           <title>Portfolio</title>
           <meta name="description" content={siteDescription} />
