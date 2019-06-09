@@ -22,19 +22,9 @@ class HomeIndex extends React.Component {
     }))
     return (
       <Layout className="portfolio" hideHeader>
-        <div
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            alignContent: 'center',
-            flexDirection: 'column',
-          }}
-        >
           <h1>
             <strong>Portfolio</strong>
           </h1>
-        </div>
         <br />
         <Helmet>
           <title>Portfolio</title>
@@ -49,6 +39,22 @@ class HomeIndex extends React.Component {
             </div>
           ))}
         </section>
+        <br />
+        <h2>Other brands I've partnered with</h2>
+        <ul>
+          <li>Dyson</li>
+          <li>Stella & Chewy's</li>
+          <li>Rite in the Rain</li>
+          <li>Sabra</li>
+          <li>Love Your Melon</li>
+          <li>Flora Health</li>
+          <li>Faherty Brand</li>
+          <li>Hydro Flask</li>
+          <li>Slow Tide</li>
+          <li>Free Country</li>
+          <li>Canna-Pet</li>
+          <li>Nature Gnaws</li>
+        </ul>
       </Layout>
     )
   }
