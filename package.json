@@ -24,6 +24,7 @@
   },
   "scripts": {
     "build": "gatsby build",
+    "postbuild": "cp -rf static/assets public/assets",
     "clean": "rm -rf ./public",
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
