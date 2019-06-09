@@ -5,6 +5,8 @@ title: Portfolio
 ---
 Stella & Chewy's
 
+![](/assets/_hrr1237-4.jpg)
+
 Love Your Melon
 
 Wondercide
