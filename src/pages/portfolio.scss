@@ -6,6 +6,8 @@ $image-size: 700;
 
 .hover-text {
     visibility: hidden;
+  pointer-events:none;
+
 }
 @media (max-width: 600px) {
   .portfolio {
@@ -27,6 +29,7 @@ $image-size: 700;
   align-items: center;
 
   .image-container {
+    overflow: hidden;
     position: relative;
     display: flex;
     align-items: center;
@@ -41,6 +44,9 @@ $image-size: 700;
       .hover-text {
         visibility: visible!important;
       }
+      img {
+        transform: scale(1.1)
+      }
     }
 
 
@@ -48,7 +54,8 @@ $image-size: 700;
   img {
     &:hover {
       cursor: pointer;
-      filter: blur(3px) grayscale(40%);
+      opacity: 0.8;
+      filter: blur(3px) grayscale(50%);
     }
     height: 100%;
     width: 100%;
@@ -58,8 +65,8 @@ $image-size: 700;
 .hover-text {
   width: 100%;
   font-size: 3em;
-  font-weight: bolder;
   text-align: center;
+  font-weight: lighter;
   position: absolute;
   color: white;
 }

@@ -22,10 +22,20 @@ class HomeIndex extends React.Component {
     }))
     return (
       <Layout className="portfolio" hideHeader>
-        <div style={{ display: 'flex', alignItems: 'center',  justifyContent: 'center', alignContent: 'center', flexDirection: 'column' }}>
-        <h1><strong>Portfolio</strong></h1>
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            alignContent: 'center',
+            flexDirection: 'column',
+          }}
+        >
+          <h1>
+            <strong>Portfolio</strong>
+          </h1>
         </div>
-        <br/>
+        <br />
         <Helmet>
           <title>Portfolio</title>
           <meta name="description" content={siteDescription} />
@@ -35,9 +45,7 @@ class HomeIndex extends React.Component {
           {images.map(image => (
             <div className="image-container">
               <img key={image.id} src={image.preview} />
-              <div className="hover-text">
-                View More
-              </div>
+              <div className="hover-text">view more</div>
             </div>
           ))}
         </section>
