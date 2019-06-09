@@ -3,9 +3,11 @@ path: /portfolio
 date: 2019-06-09T04:51:09.193Z
 title: Portfolio
 ---
-Stella & Chewys
+Stella & Chewy's
 
 Love Your Melon
+
+Wondercide
 
 Bulletproof
 
