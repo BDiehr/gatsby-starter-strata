@@ -21,4 +21,5 @@ collections:
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Client", name: "client", widget: "string"}
       - {label: "Image", name: "img", widget: "image"}
