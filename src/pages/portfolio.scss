@@ -1,0 +1,30 @@
+$image-size: 400px;
+
+.image-grid {
+  margin: 2em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  grid-template-rows: auto;
+
+  grid-row-gap: 2em;
+  grid-column-gap: 2em;
+  justify-items: center;
+  align-items: center;
+
+  .image-container {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    background: black;
+    height: 100%;
+    max-width: $image-size;
+    max-height: $image-size;
+  }
+  img {
+    object-fit: cover;
+    height: 100%;
+
+    width: 100%;
+  }
+}
