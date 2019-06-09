@@ -11,12 +11,17 @@ Wondercide
 
 Bulletproof
 
+Earth Rated
+
+Silvon
+
 Brands I've worked with
 
 * Hydroflask
 * Tasty Bite
 * Sabra
 * Canna-Pet
+* Faherty Brand
 * Best Bully Sticks
 * Nature Gnaws
 * Rite in the Rain
