@@ -1,5 +1,5 @@
 ---
-path: /blog/portfolio-blog-2
+path: /blog/some-blog-post
 date: 2019-06-09T04:51:09.193Z
 title: Portfolio
 ---
